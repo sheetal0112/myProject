@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<header style=" margin:0 1rem 0 1rem; display: flex;">
+	<div style="flex: 3">
+		<a href="#">TO THE NEW</a>
+	</div>
+	<div style="flex: 1;">
+		<a href="#">Home</a>
+		<a href="#">Quick Help</a>
+	</div>
+</header><br>
+<div style="display: flex;">
+	<div style="flex: 1;"></div>
+		<form>
+			<header class="header"> Bug Report</header>
+			<div class="container">
+				<label>Title*</label><br>
+				<input type="text" name=""><br><br>
+
+				<label>Description*</label><br>
+				<textarea class="desc" type="text" name=""></textarea><br><br>
+
+				<label>Operating System*</label><br>
+				<select class="dropdown" name="Operating Systems">
+				  <option value="Windows XP">Windows XP</option>
+				  <option value="Ubuntu">Ubuntu</option>
+				  <option value="Mac OS">Mac OS</option>
+				  <option value="Windows 10">Windows 10</option>
+				</select><br><br>
+
+				<label>Product*</label><br>
+				<select class="dropdown" name="Product">
+				  <option value="Formold">Formold</option>
+				  <option value="Formold">Formold</option>
+				  <option value="Formold">Formold</option>
+				  <option value="Formold">Formold</option>
+				</select><br><br>
+
+				<label>Version*</label><br>
+				<input type="text" name=""><br><br>
+
+				<label>License:</label><br>
+				<input type="radio" name="License">Free
+				<input type="radio" name="License">Business<br><br>
+
+				<label>Severity:</label><br>
+				<select class="dropdown" name="Severity">
+				  <option value="CriticalStage1">CriticalStage1</option>
+				  <option value="CriticalStage2">CriticalStage2</option>
+				  <option value="CriticalStage3">CriticalStage3</option>
+				  <option value="CriticalStage4">CriticalStage4</option>
+				</select><br><br>
+
+				<label>Attachments:</label><br>
+				<input type="file" name="file">
+
+			</div>
+			<footer>
+				<hr>
+				<button class="btn" type="input">Send</button>
+			</footer>
+		</form>
+	<div style="flex: 1;"></div>
+</div>
+</body>
+</html>
