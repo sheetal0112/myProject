@@ -1,0 +1,98 @@
+body{
+	margin: 0;
+	background-color: #414242;
+}
+.black{
+	background-color: grey;
+}
+
+#maindiv{
+	margin-left: 3rem;
+	margin-right: 3rem;
+	background-color: white;
+}
+
+.headtothenew{
+	margin: 0rem; 
+	margin-left: 5rem; 
+	padding-top:1rem; 
+	font-size: 2rem; 
+	color: #c9c9c9;
+}
+
+.textlinks{
+	padding: 1rem; 
+	margin:0 auto; 
+	margin-left: 5rem; 
+	margin-right: 5rem; 
+	background-color: #151616;
+}
+
+#lfromgal{
+	margin-left: 5rem;
+	margin-right: 5rem;
+	display: flex;
+}
+
+.lfromgal{
+	width: 215px;
+	height: 315px;
+	margin : 10px;
+	flex: 1;
+	background-color: grey;
+}
+
+#topblack{
+	margin-left:5rem;
+	margin-right:5rem;
+	height: 25rem;
+	display: flex;
+}
+
+.topblackptag{
+	margin: 0 auto; 
+	margin-top:12rem;
+	text-align: center; 
+	color: white; 
+	font-size: 2vw; 
+	flex: 2;
+}
+
+.textpart{
+text-align: center; 
+background-color: #c9c9c9; 
+margin-left: 5rem; 
+margin-right: 5rem; 
+padding: 0.5rem; 
+}
+
+#lfromgaltext{
+	margin-left: 5rem;
+	margin-right: 5rem;
+	text-align: center;
+	display: flex;	
+}
+
+.lfromgaltext{
+	flex: 1;
+}
+
+.lfromgalptag{
+	margin: 0 auto; 
+	margin-top:8rem;
+	text-align: center; 
+	color: white; 
+}
+
+.text1{
+	text-align: flex;
+}
+
+a{
+	text-decoration: none;
+}
+
+footer{
+	background-color: #202120; 
+	display:flex;
+}
