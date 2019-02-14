@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Question 4</title>
+<script type="text/javascript">
+	var mainOb;
+	mainOb = {"a":1,"b":2};
+
+console.log("mainOB.a : ",mainOb.a);
+console.log("mainOB.a : ",mainOb.b);
+	//document.write("mainOB.a : ",mainOb.a);
+//document.write("<br>mainOB.b : ",mainOb.b);
+
+var copyOB={};
+console.log("mainOB.a : ",copyOB.a);
+console.log("mainOB.a : ",copyOB.a);
+	//document.write("<br>copyOB.a : ",copyOB.a);
+//document.write("<br>copyOB.b: ",copyOB.b);
+ copyOB= Object.assign({}, mainOb);
+console.log("mainOB.a : ",copyOB.a);
+console.log("mainOB.a : ",copyOB.a);
+ //document.write("<br>copyOB.a : ",copyOB.a);
+//document.write("<br>copyOB.b: ",copyOB.b);
+</script>
+</head>
+</html>
+	
+
+

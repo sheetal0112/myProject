@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Question 2</title>
+<script type="text/javascript">
+
+	var str=prompt("Enter the string");
+
+	document.write("string : ",str);
+
+	function palin(str)
+	{
+		var l = str.length;
+		for(var i = 0;i < Math.floor(l/2);i++)
+		{
+			if(str[i]!=str[l-1-i])
+				return false;			
+		}
+		return true;
+	}
+	if (palin(str))
+		document.write("<br>The string you entered is palindrome ");
+	else
+		document.write("<br>The string you entered is not palindrome ");
+	</script>
+</head>
+</html>
+
+
+
+	
