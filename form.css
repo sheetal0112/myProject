@@ -1,0 +1,54 @@
+	<style type="text/css">
+		
+		form{
+			border: 0.1rem solid #a1a4a8;
+  			border-radius: 8px;
+  			box-sizing: border-box;
+  			color:#494c4b;
+		}
+		
+		.header{
+			background-color: #a1a4a8;			
+			color: #ffffff;
+			padding: 0.5rem;
+		}
+
+		.container{
+
+			padding: 1rem;
+		}
+
+		input[type=text],select,textarea{
+			width: 25rem;
+		  	padding: 0.2rem;
+		  	border: 0.05rem solid #a1a4a8;
+		  	border-radius: 4px;
+		  	
+		}
+		#version{
+			width: auto;
+			padding: 0.2rem;
+		  	border: 0.05rem solid #a1a4a8;
+		  	border-radius: 4px;
+		}
+
+		.dropdown{
+			background-color: #4ab28e;
+			border: 0.1rem solid #4ab28e;
+  			font-weight: bold;
+  			padding: 0.2rem;
+  			color: #ffffff;
+		}
+		.btn{
+			margin: 1rem;
+			background-color: #4ab28e;
+  			color: #ffffff;
+  			float: right;
+
+		}
+
+		a{
+			text-decoration: none;
+			color: #217c91;
+		}
+	</style>
