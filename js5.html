@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>Question 5</title>
+<script type="text/javascript">
+	var Employee = [
+	{
+		name="Shaily",
+		age=22,
+		salary=4950,
+		DOB="11/05/1996",
+
+	},
+	{   name="Sfurti",
+		age=24,
+		salary=8000,
+		DOB="08/12/1994",
+},
+{       name="Snow",
+		age=21,
+		salary=7000,
+		DOB="16/03/1998",
+
+	},
+	{
+		name="Rtika",
+		age=22,
+		salary=2500,
+		DOB="21/01/1997",
+
+	},
+	{
+		name="Daisy",
+		age=26,
+		salary=150,
+		DOB="20/12/1992",
+
+	}];
+
+	var n=document.getElementById("para");
+	var i;
+	Employee.forEach(function looping(i)
+	{
+      n.innerHTML = n.innerHTML+"{name:"+i.name+",";
+      n.innerHTML = n.innerHTML+"(age:"+i.age+",");
+	 n.innerHTML = n.innerHTML+"(salary:"+i.salary+",");
+      n.innerHTML = n.innerHTML+"(DOB:"+i.DOB+",");
+	});
+console.log(Employee);
+	function Isgreater(Employee){
+		if(Employee.salary>5000) return true;
+	}
+
+	var salaryhigh = Employee.filter(Isgreater);
+	console.log("Employees with salary greater than 5000");
+	console.log(salaryhigh);
+
+	function isPromoted(Employee)
+	{
+		if(Employee.salary<1000 && Employee.age>20) return true;
+	}
+
+	var promotion=Employee.filter(isPromoted);
+	var i;
+	promotion.forEach(function(i)
+	{
+		i.salary=i.salary+(5*i.salary);
+	});
+	console.log("grouped by age-");
+
+	Array.prototype.groupBy = function(prop){
+		return this.reduce(function(groups, item) {
+			var val = item[prop]
+			groups[val]=groups[val] || []
+			groups[val].push(item)
+			return groups
+		},{})
+	}
+	var grouped=Employee.groupBy('age');
+	console.log(grouped);
+	
+	 </script>
+</head>
+</html>
+	
