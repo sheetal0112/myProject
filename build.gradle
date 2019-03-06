@@ -5,17 +5,93 @@
  * This is a general purpose Gradle build.
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds/
  */
-apply plugin:'java'
+apply plugin:'java'//Ques1
 sourceSets {
     main{
         java{
-            srcDirs = ['src/main/java']
+            srcDirs = ['src/main/java2']
+        }
+    }
+}
+apply plugin:'java'//Ques2
+apply plugin:'idea'
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', 'src/main/java2']
+        }
+
+    }
+}
+
+
+jar{
+    manifest{
+        attributes 'Main-Class':'Egg2'
+    }
+}
+
+apply plugin:'java'//Ques3
+apply plugin:'idea'
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', 'src/main/java2']
+        }
+        resources{
+            srcDirs = ['src/main/resources']
+            exclude 'file.txt'
         }
     }
 }
 
+
 jar{
     manifest{
-        attributes 'Main-Class':'Eg'
+        attributes 'Main-Class':'Egg2'
     }
 }
+
+task gt >> {
+    doFirst {
+        println("Apun Ashvathama hai..Kabhi nahi marega!!!")
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://repository-achartengine.forge.cloudbees.com/snapshot/"// Ques5
+    }
+}
+
+apply plugin:'java'//Ques4
+apply plugin:'idea'
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', 'src/main/java2']
+        }
+
+    }
+    jar {
+        manifest {
+            attributes 'Main-Class': 'Egg2'
+        }
+        from {
+            configurations.compile.collect{it.isDirectory() ? it : zipTree(it)}
+        }
+        }
+repositories {
+mavenCentral()}
+}
+dependencies{
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'//lang3 dependency Ques4
+}
+group 'com.ttn'
+version '1.0-SNAPSHOT'
+
+
+apply from : 'myTask.gradle'
+
+
