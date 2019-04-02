@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <mytabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="tab1"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                             <techlogo1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/fileupload"
+                                                fieldDescription="Choose first tech logo"
+                                                fieldLabel="Choose logo1"
+                                                name="./techlogo1"
+                                                required="{Boolean}true"
+                                                text="choose file"/>
+                                            <techlogo2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/fileupload"
+                                                fieldDescription="Choose second tech logo"
+                                                fieldLabel="Choose logo2"
+                                                name="./techlogo2"
+                                                required="{Boolean}true"
+                                                text="choose file"/>
+                                            <techlogo3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/fileupload"
+                                                fieldDescription="Choose third tech logo"
+                                                fieldLabel="Choose logo3"
+                                                name="./techlogo3"
+                                                required="{Boolean}true"
+                                                text="choose file"/>
+                                            <techlogo4
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/fileupload"
+                                                fieldDescription="Choose fourth tech logo"
+                                                fieldLabel="Choose logo4"
+                                                name="./techlogo4"
+                                                required="{Boolean}true"
+                                                text="choose file"/>
+                                            <techlogo5
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/fileupload"
+                                                fieldDescription="Choose fifth tech logo"
+                                                fieldLabel="Choose logo5"
+                                                name="./techlogo5"
+                                                required="{Boolean}true"
+                                                text="choose file"/>
+                                            <techlogo6
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/fileupload"
+                                                fieldDescription="Choose sixth tech logo"
+                                                fieldLabel="Choose logo6"
+                                                name="./techlogo6"
+                                                required="{Boolean}true"
+                                                text="choose file"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab1>
+ <tab2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Technologies Description"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <head
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter heading for technology stack"
+                                                fieldLabel="Technology Stack Heading"
+                                                name="./head"
+                                                required="{Boolean}true"/>
+                                            <content
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter content for technology stack"
+                                                fieldLabel="Technology Stack Content"
+                                                name="./content"
+                                                required="{Boolean}true"/>
+                                            <footHead
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter foot head for technology stack"
+                                                fieldLabel="Technology Stack Foot"
+                                                name="./footHead"
+                                                required="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab2>
+  <tab3
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Technologies Description"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <buttonText1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button one text"
+                                                fieldLabel="Button 1 text"
+                                                name="./buttonText1"
+                                                required="{Boolean}true"/>
+                                            <buttonAction1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button one action"
+                                                fieldLabel="Button 1 URL"
+                                                name="./buttonAction1"
+                                                required="{Boolean}true"/>
+                                            <buttonText2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button two text"
+                                                fieldLabel="Button 2 text"
+                                                name="./buttonText2"
+                                                required="{Boolean}true"/>
+                                            <buttonAction2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button two action"
+                                                fieldLabel="button 2 URL"
+                                                name="./buttonAction2"
+                                                required="{Boolean}true"/>
+                                            <buttonText3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button three text"
+                                                fieldLabel="Button 3 text"
+                                                name="./buttonText3"
+                                                required="{Boolean}true"/>
+                                            <buttonAction3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button three action"
+                                                fieldLabel="button 3 URL"
+                                                name="./buttonAction3"
+                                                required="{Boolean}true"/>
+                                            <buttonText4
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button four text"
+                                                fieldLabel="Button 4 text"
+                                                name="./buttonText4"
+                                                required="{Boolean}true"/>
+                                            <buttonAction4
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button four action"
+                                                fieldLabel="button 4 URL"
+                                                name="./buttonAction4"
+                                                required="{Boolean}true"/>
+                                            <buttonText5
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button five text"
+                                                fieldLabel="Button 5 text"
+                                                name="./buttonText5"
+                                                required="{Boolean}true"/>
+                                            <buttonAction5
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter button five action"
+                                                fieldLabel="button 5 URL"
+                                                name="./buttonAction5"
+                                                required="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab3>
+                </items>
+            </mytabs>
+        </items>
+    </content>
+</jcr:root>
