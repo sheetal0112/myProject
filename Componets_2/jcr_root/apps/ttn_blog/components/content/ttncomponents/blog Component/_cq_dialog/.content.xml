@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <mytabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="tab2"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                jcr:primaryType="nt:unstructured"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                fieldLabel="Image"
+                                                fileNameParameter="./fileName"
+                                                fileReferenceParameter="./fileReference"
+                                                mimeTypes="[image]"
+                                                multiple="{Boolean}false"
+                                                name="./file"
+                                                title="Upload Image Assest"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                            <tagtext1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="tag text 1 for blog"
+                                                fieldLabel="blog text 1"
+                                                name="./tagtext1"
+                                                required="{Boolean}true"/>
+                                            <tagaction1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="enter tag item one action"
+                                                fieldLabel="tag item 1 action (URL)"
+                                                name="./tagaction1"
+                                                required="{Boolean}true"/>
+                                            <tagtext2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="tag text 2 for blog"
+                                                fieldLabel="blog text 2"
+                                                name="./tagtext2"
+                                                required="{Boolean}true"/>
+                                            <tagaction2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="enter tag item one action"
+                                                fieldLabel="tag item 2 action (URL)"
+                                                name="./tagaction2"
+                                                required="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab2>
+                    <tab1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="tab1"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <contentSnippet
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Content snippet that to be appeared on blog thumbnails"
+                                                fieldLabel="Blog content snippet"
+                                                name="./contentSnippet"
+                                                required="{Boolean}true"/>
+                                            <author
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Author of this blog"
+                                                fieldLabel="Blog author"
+                                                name="./author"
+                                                required="{Boolean}true"/>
+                                            <publishDate
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add publishing date"
+                                                fieldLabel="Publish Date"
+                                                name="./publishDate"
+                                                required="{Boolean}true"/>
+                                            <contentAction
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Action when blog content snippet is clicked"
+                                                fieldLabel="Blog Action (URL)"
+                                                name="./contentAction"
+                                                required="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab1>
+                </items>
+            </mytabs>
+        </items>
+    </content>
+</jcr:root>
