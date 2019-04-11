@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.ttn.sling.project.core.service.impl.MyServiceConfiguration">
+  <OCD id="com.ttn.sling.project.core.service.impl.MyServiceConfiguration" name="My Service Configuration" description="Service Configuration">
+    <AD id="configValue" type="String" name="Config value" default="idx"/>
+    <AD id="getStringValues" type="String" cardinality="4" name="Multiple-Values" description="Multi Configuration values, max 4" default="[1]"/>
+    <AD id="getNumberValue" type="Integer" name="NumberValue" description="Number values" default="2"/>
+    <AD id="my.property.name" type="String" name="My property name" description="Single Configuration value"/>
+    <AD id="method" type="String" name="Method" description="Used method" default="GET">
+      <Option label="GET" value="GET"/>
+      <Option label="POST" value="POST"/>
+      <Option label="PUT" value="PUT"/>
+      <Option label="PATCH" value="PATCH"/>
+      <Option label="DELETE" value="DELETE"/>
+    </AD>
+  </OCD>
+</metatype:MetaData>

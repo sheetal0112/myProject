@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.ttn.sling.project.core.service.impl2.StudentCom" immediate="true" activate="activateMethod">
+  <implementation class="com.ttn.sling.project.core.service.impl2.StudentCom"/>
+  <service>
+    <provide interface="com.ttn.sling.project.core.service.impl2.StudentClassService"/>
+  </service>
+  <property name="NoofStudents" type="Integer" value="10"/>
+  <property name="PassingMarks" type="Integer" value="15"/>
+</scr:component>

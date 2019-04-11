@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.ttn.sling.project.core.service.impl.Com" activate="activate">
+  <implementation class="com.ttn.sling.project.core.service.impl.Com"/>
+  <reference name="mySimpleService" interface="com.ttn.sling.project.core.service.MySimpleService" field="mySimpleService"/>
+</scr:component>

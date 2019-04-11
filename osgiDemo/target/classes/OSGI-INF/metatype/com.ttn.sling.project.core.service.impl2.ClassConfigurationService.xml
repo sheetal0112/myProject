@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.ttn.sling.project.core.service.impl2.ClassConfigurationService">
+  <OCD id="com.ttn.sling.project.core.service.impl2.ClassConfigurationService" name="Class Configuration Service" description="Service Configuration">
+    <AD id="NoofStudents" type="Integer" name="NoofStudents" description="No of Students" default="10"/>
+    <AD id="PassingMarks" type="Integer" name="PassingMarks" description="Passing Marks" default="15"/>
+  </OCD>
+  <Designate pid="com.ttn.sling.project.core.service.impl2.StudentCom">
+    <Object ocdref="com.ttn.sling.project.core.service.impl2.ClassConfigurationService"/>
+  </Designate>
+  <Designate pid="com.ttn.sling.project.core.service.impl2.StudentCom2">
+    <Object ocdref="com.ttn.sling.project.core.service.impl2.ClassConfigurationService"/>
+  </Designate>
+</metatype:MetaData>

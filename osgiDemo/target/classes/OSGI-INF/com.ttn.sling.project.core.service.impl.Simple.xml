@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.ttn.sling.project.core.service.impl.Simple" immediate="true" activate="activate">
+  <implementation class="com.ttn.sling.project.core.service.impl.Simple"/>
+  <service>
+    <provide interface="com.ttn.sling.project.core.service.MySimpleService"/>
+  </service>
+  <property name="method" type="String" value="GET"/>
+  <property name="getNumberValue" type="Integer" value="2"/>
+  <property name="configValue" type="String" value="idx"/>
+  <property name="getStringValues" type="String">[1]</property>
+  <property name="service.ranking" type="Integer" value="10"/>
+</scr:component>
